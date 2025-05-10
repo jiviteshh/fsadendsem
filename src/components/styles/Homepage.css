@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
+
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+  padding: 2rem;
+  flex-wrap: wrap;
+  
+}
+
+.content-left {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 2rem;
+}
+
+.content-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+}
+
+.welcome-text,
+.myself-text {
+  font-family: 'Titillium Web', sans-serif;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #0099cc;
+  margin-bottom: 1rem;
+  animation: glow 2.5s ease-in-out infinite alternate;
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.myself-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.name-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 25px #0099cc;
+  animation: glow 3s ease-in-out infinite alternate;
+  margin-bottom: 0.5rem;
+}
+
+.role-text {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5rem;
+  color: #a0a0a0;
+  margin-top: 0.5rem;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #00ffcc;
+  box-shadow: 0 0 20px #00ffcc, 0 0 40px #0099cc;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.resume-link {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2rem;
+  color: #00ffcc;
+  text-decoration: none;
+  border: 2px solid #00ffcc;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #0099cc;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.resume-link:hover {
+  background-color: #00ffcc;
+  color: #121212;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-left {
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .content-right {
+    align-items: center;
+  }
+
+  .resume-link {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-text {
+    font-size: 2rem;
+  }
+
+  .myself-text {
+    font-size: 1.5rem;
+  }
+
+  .name-text {
+    font-size: 3rem;
+  }
+
+  .role-text {
+    font-size: 1.2rem;
+  }
+
+  .resume-link {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+}
