@@ -7,7 +7,7 @@ import Certifications from "./components/Certifications";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import About from "./components/About";
-import FeedBack from "./components/FeedBack";
+import FeedBack from "./components/Feedback";
 
 function App() {
   return (
